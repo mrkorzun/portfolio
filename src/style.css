@@ -1,0 +1,9 @@
+/* Common styles */
+@import url("./css/reset.css");
+@import url("./css/base.css");
+@import url("./css/containers.css");
+
+/* Sections style */
+@import url("./css/header.css");
+@import url("./css/modal.css");
+@import url("./css/hero.css");

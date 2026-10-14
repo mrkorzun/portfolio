@@ -1,0 +1,167 @@
+/* 
+@media screen and (min-width: 768px) {
+  }
+
+@media screen and (min-width: 1280px) {
+  } 
+
+  */
+
+header {
+  margin-top: 36px;
+
+  @media screen and (min-width: 768px) {
+    margin: 36px 32px 36px 32px;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline;
+  font-size: 24px;
+  font-family: "Impact", sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.logo-green {
+  color: #00b068;
+}
+
+.nav-side {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 0; /* бургера нет, отступ не нужен */
+  }
+}
+
+.nav-list {
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    padding: 0;
+  }
+}
+
+.nav-link {
+  cursor: pointer;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--hover-green);
+}
+
+.switch {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    cursor: pointer;
+    margin-right: 40px;
+  }
+}
+
+.switch-input {
+  display: none;
+}
+
+.switch-slider {
+  position: absolute;
+  inset: 0;
+  background-color: #e4e5e6;
+  border-radius: 16px;
+  transition: background-color 0.3s;
+}
+
+.switch-slider::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #00b068;
+  border-radius: 50%;
+  /* transition: transform 0.3s; */
+  transition:
+    left 0.3s,
+    background-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.switch-input:checked + .switch-slider {
+  background-color: #2b2e33;
+}
+
+.switch-input:checked + .switch-slider::before {
+  left: calc(100% - 20px - 2px);
+  background-color: transparent;
+  box-shadow: inset -8px 0 0 0 #14c57c;
+}
+
+.btn-order {
+  @media screen and (min-width: 768px) {
+    cursor: pointer;
+
+    width: 217px;
+    height: 48px;
+
+    font-size: 15px;
+    letter-spacing: 0.5px;
+
+    color: #f0f0f0;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #14c57c;
+  }
+}
+
+.btn-order:hover {
+  background-color: #009156;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32px;
+  height: 20px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.burger-line {
+  height: 2px;
+  background-color: var(--accet-green);
+}
