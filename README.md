@@ -6,7 +6,7 @@ A responsive single-page portfolio website for a Fullstack Developer. It present
 🎨 **Design:** [Figma mockup](https://www.figma.com/design/IfXpaJMGJM9UVEJTWDEzrM/Portfolio-2.0--Copy-?node-id=9380-180&m=dev)
 📡 **API:** [portfolio-js.b.goit.study/api-docs](https://portfolio-js.b.goit.study/api-docs)
 
-![Preview](./assets/preview.jpg)
+![Preview](./src/assets/preview.jpg)
 
 ---
 
