@@ -24,11 +24,14 @@
             romario <span class="logo-green">korzun</span>
           </a>
           <div class="nav-side">
-            <ul class="nav-list">
-              <li class="nav-link">About me</li>
-              <li class="nav-link">Projects</li>
-              <li class="nav-link">Contacts</li>
-            </ul>
+            <nav class="nav-list">
+              <ul>
+                <li class="nav-link">About me</li>
+                <li class="nav-link">Projects</li>
+                <li class="nav-link">Contacts</li>
+              </ul>
+            </nav>
+
             <label class="switch">
               <input type="checkbox" class="switch-input" />
               <span class="switch-slider"></span>
@@ -47,6 +50,40 @@
           </button>
         </nav>
       </header>
+      <!-- BACKDROP MODAL -->
+      <div class="backdrop">
+        <div class="modal">
+          <div class="modal-header">
+            <a class="logo" href="#">
+              romario <span class="logo-green">korzun</span>
+            </a>
+            <button
+              class="burger"
+              type="button"
+              aria-label="Открыть меню"
+              aria-expanded="false"
+            >
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+            </button>
+          </div>
+          <nav class="modal-nav">
+            <ul class="modal-nav-list">
+              <li><a href="#about" class="modal-nav-link">About me</a></li>
+              <li><a href="#projects" class="modal-nav-link">Projects</a></li>
+              <li><a href="#contacts" class="modal-nav-link">Contacts</a></li>
+            </ul>
+          </nav>
+          <label class="switch-modal">
+            <input type="checkbox" class="switch-modal-input" />
+            <span class="switch-modal-slider"></span>
+          </label>
+          <button class="btn-modal-order" type="button">
+            order the project
+          </button>
+        </div>
+      </div>
     </main>
     <script type="module" src="/src/main.js"></script>
   </body>
